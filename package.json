@@ -2,7 +2,7 @@
   "name": "final",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sviden.github.io/ExchangeAppFront",
+  "homepage": "https://sviden.github.io/ExchangeAppFront/",
   "proxy": "https://api.apilayer.com/exchangerates_data/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
@@ -44,7 +44,7 @@
     "dev": "env-cmd -f envs/.env.dev react-scripts build",
     "prod": "env-cmd -f envs/.env.prod react-scripts build",
     "staging": "env-cmd -f envs/.env.staging react-scripts build",
-    "predeploy": "npm run build",
+    "predeploy": "npm run dev",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

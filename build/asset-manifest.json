@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exchangeapp/static/css/main.5a02e33e.css",
-    "main.js": "/exchangeapp/static/js/main.5d43b98c.js",
-    "static/js/787.bd02f72e.chunk.js": "/exchangeapp/static/js/787.bd02f72e.chunk.js",
-    "index.html": "/exchangeapp/index.html",
-    "main.5a02e33e.css.map": "/exchangeapp/static/css/main.5a02e33e.css.map",
-    "main.5d43b98c.js.map": "/exchangeapp/static/js/main.5d43b98c.js.map",
-    "787.bd02f72e.chunk.js.map": "/exchangeapp/static/js/787.bd02f72e.chunk.js.map"
+    "main.css": "/ExchangeAppFront/static/css/main.5a02e33e.css",
+    "main.js": "/ExchangeAppFront/static/js/main.01b1f357.js",
+    "static/js/787.bd02f72e.chunk.js": "/ExchangeAppFront/static/js/787.bd02f72e.chunk.js",
+    "index.html": "/ExchangeAppFront/index.html",
+    "main.5a02e33e.css.map": "/ExchangeAppFront/static/css/main.5a02e33e.css.map",
+    "main.01b1f357.js.map": "/ExchangeAppFront/static/js/main.01b1f357.js.map",
+    "787.bd02f72e.chunk.js.map": "/ExchangeAppFront/static/js/787.bd02f72e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a02e33e.css",
-    "static/js/main.5d43b98c.js"
+    "static/js/main.01b1f357.js"
   ]
 }
