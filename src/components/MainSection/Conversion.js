@@ -15,7 +15,6 @@ export const Conversion = (props) => {
 
     const convert = async (e) => {
         const convPath = process.env.REACT_APP_CURRENCY_CONVERSION;
-        console.log('JENYA:' + convPath);
         const response = await axios.get(convPath, { params: { from: from, to: to, amount: amount }});
         setExchREsult(response.data.result);
     };
