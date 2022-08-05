@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useCallback } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
 export const CurrContextTopBar = createContext("topbar curr context");
@@ -13,7 +13,7 @@ export const CurrencyContextTopBarProvider = ({ children, base }) => {
         if (!curr || data.data.usd !== curr.usd || data.data.eur !== curr.eur || data.data.btc !== curr.btc || data.data.date !== curr.date) {
             setCurr({ ...data.data });
         }
-          
+
         return data.data;
     };
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS } from "chart.js/auto";
 import styles from "../../styles/chart.module.scss";
 import axios from "axios";
 
@@ -14,7 +13,7 @@ export const Chart = () => {
         setDates(Object.keys(result.data.rates));
         setRates(result.data.rates);
     };
-    
+
 
     useEffect(() => {
         getData();
