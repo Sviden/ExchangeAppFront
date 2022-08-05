@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import axios from "axios";
 import styles from "../../styles/goldconversion.module.scss";
@@ -16,7 +16,7 @@ export const Conversion = (props) => {
     const convert = async (e) => {
         const convPath = process.env.REACT_APP_CURRENCY_CONVERSION;
         console.log('JENYA:' + convPath);
-        const response = await axios.get(convPath, { params: { from: from, to: to, amount: amount }});
+        const response = await axios.get(convPath, { params: { from: from, to: to, amount: amount } });
         setExchREsult(response.data.result);
     };
 

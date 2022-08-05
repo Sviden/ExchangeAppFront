@@ -19,7 +19,6 @@ export const CurrencyContextTopBarProvider = ({ children, base }) => {
 
     useEffect(() => {
         getDataCurrency();
-
         let inter = setInterval(() => {
             getDataCurrency();
         }, 5000);
