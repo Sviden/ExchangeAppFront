@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import axios from "axios";
 import styles from "../../styles/goldconversion.module.scss";
