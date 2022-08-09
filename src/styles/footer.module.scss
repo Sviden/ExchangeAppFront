@@ -1,4 +1,7 @@
 @import 'global';
+.wrapper{  
+    bottom: 0%;
+}
 
 .container{
         background: $mainColorFooter; 
@@ -7,7 +10,11 @@
         flex-direction: column;
         align-items: center;
         box-shadow:  3px 3px 10px #b1b1b1;
-        min-height: 10%;
+        width: 100vw;    
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-top: auto;
 }
 
 @media only screen and (max-width: 650px) {
@@ -18,3 +25,11 @@
         min-height: 10%;
     }
 }
+
+
+// @media screen and (max-width: 300px) and (max-height: 655px) {
+//         .container{
+//             position: relative;
+//     }
+// }
+

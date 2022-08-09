@@ -6,7 +6,7 @@ import { BsFacebook } from "react-icons/bs";
 
 
 export const Footer =()=>(
-    <footer>
+    <div className={styles.wrapper}>
         <div className={styles.container}>
            <ul>  <li><AiFillInstagram/> instanick</li>
             <li><BsLinkedin/> linkedIn</li>
@@ -15,5 +15,5 @@ export const Footer =()=>(
              ©️ 2022 Copyright: COMPNAME
 
         </div>
-    </footer>
+    </div>
 )

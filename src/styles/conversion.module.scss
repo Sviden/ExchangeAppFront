@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     min-width: 50%;
-    height: 50%;
+    height: 60%;
     text-transform:uppercase;
     padding: 2%;
     font-family: $menuFont;
@@ -29,11 +29,7 @@
     animation-name: example;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
-
-    // animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-
-
     border: 1px solid #2b5d3b22; 
     box-shadow: 2px 3px 13px #2b5d3b22; 
     text-shadow: 2px 3px 13px #2b5d3b22;
@@ -70,8 +66,39 @@
 
   }
 
-  @media only screen and  (max-width: 800px) {
+
+  @media only screen and (min-height: 1000px) {
+    .btn{
+        height: 50%;
+    }
+    .btnOnClick{
+        height: 50%;
+    }
     
+}
+
+  @media only screen and  (max-width: 800px) {
+    .btn{
+        margin-top: 4%;
+         font-weight: 100;
+        display: flex;
+        justify-content: center;
+        min-width: 50%;
+        height: 20%;
+        text-transform:uppercase;
+        padding: 2%;
+        font-family: $menuFont;
+        font-size: 1.3em;
+        color: rgb(14, 83, 44);
+        background: linear-gradient(#fb80053b, rgba(13, 65, 13, 0.18)); 
+        cursor: pointer;
+        outline: none;
+        border: 1px solid #18622100;  
+        border-radius: 3px;
+        box-shadow: 0px 3px 13px rgba(103, 99, 99, 0.311); 
+    
+    }
+
 
     .conversionContainer{
         display: flex;
@@ -82,3 +109,5 @@
         justify-content: space-evenly;
     }
   }
+
+ 

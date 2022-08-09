@@ -43,7 +43,9 @@ export const Main = () => {
                     {showGoldRates && <GoldRates />}{" "}
                 </div>
                 <Chart />
-                <Footer />
+                <div >
+                </div>
+                
             </>
         );
     } else {
@@ -60,7 +62,8 @@ export const Main = () => {
                 </div>
                 <div className={showConversion || showGoldRates ? stylesGoldCurr.container : ""}>{showConversion && <Conversion />}</div>
                 <Chart />
-                <Footer />
+                <div >
+                </div>
             </>
         );
     }

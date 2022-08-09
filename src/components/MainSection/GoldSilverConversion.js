@@ -59,7 +59,7 @@ export const GoldRates = () => {
                     {currency}
                 </p>
                 <button onClick={() => setShowSelect(!showSelect)} className={styles.btn}>
-                    Submit
+                    Close
                 </button>
             </div>
         );
