@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Chart } from "./Chart";
 import { Conversion } from "./Conversion";
 import { GoldRates } from "./GoldSilverConversion";
-import { Footer } from "../Footer";
 import styles from "../../styles/conversion.module.scss";
 import stylesGoldCurr from "../../styles/goldconversion.module.scss";
 import { IoIosArrowDown } from "react-icons/io";
