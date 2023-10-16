@@ -5,20 +5,19 @@
 .container{
  @include conversionGoldSilverContainer;
  border-bottom: 1px solid $conversionBorderColor;
+ margin: 20px 0;
 }
 
-.goldsilver{
+.goldsilver, .conversion{
     grid-area: col;
     grid-column: col-1;
     min-width: 60%;
+    margin-bottom: 40px;
 
 }
 
 .conversion{
-    grid-area: col;
     grid-column: col-2;
-    min-width: 60%;
-
 }
 
 
@@ -36,6 +35,8 @@ background-color: rgb(92, 92, 30) ;
 }
 
 .btn{
+    margin-top: 50px;
+
     box-shadow: 1px 3px 8px rgba(103, 99, 99, 0.311); 
     background: $mainSubmitBtnBackground; 
 
@@ -43,7 +44,6 @@ background-color: rgb(92, 92, 30) ;
     font-size: 1.2em;
     display: flex;
     justify-content: center;
-    margin: 3%;
     border: 1px solid #5b8f4b57;
     border-radius: 2px;
     min-width: 30%;
@@ -63,23 +63,24 @@ background-color: rgb(92, 92, 30) ;
 }
 
 .amountInput{
-
+   display: flex;
+   align-items: end;
    height: 60%;
    font-family: $menuFont;
 }
 
-// .amountInput input:focus{
-//     border: 1px solid red;
-// }
-
 .amountInput input{
-    border: 2px solid $colorForSelect;
+    border: 1px solid hsl(0, 0%, 80%);;
     border-radius: 5px;
-    margin-left: 2%;
-    min-height: 40px;
+    min-height: 38px;
+    padding: 0 8px;
+    font-weight: 600;
+
 }
-.exchangeResult{
-    margin: 3%;
+.exchangeResult {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
     font-family: $menuFont;
     font-weight: 100;
     font-size: 1.5em;

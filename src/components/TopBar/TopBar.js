@@ -30,7 +30,12 @@ export const TopBar =()=>{
     return (
         <>
         <nav className={styles.NavContainer}>
-            <div className={styles.compNameMenu} ><div onClick={()=>{setshowMenu(!showMenu); navigate('/')}}><Hamburger /></div><h5 onClick={()=>navigate('/')} className={styles.compName}>COMPNAME</h5></div>  
+            <div className={styles.compNameMenu} >
+              <div onClick={()=>{setshowMenu(!showMenu); navigate('/')}}>
+                <Hamburger />
+              </div>
+             <div onClick={()=>navigate('/')} className={styles.compName}>EXCHANGE INFO</div>
+            </div>  
           <CurrencyContextTopBarProvider base={base}> 
             <div className={`${styles.navEl}  `}><EurUsd/></div>  
             <div className={styles.navEl}><Btc/></div>  

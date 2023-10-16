@@ -25,11 +25,8 @@ export const Contact = () => {
                     onSubmit(e);
                 }}
             >
-                <label for="name">Name:</label>
                 <input className={styles.inputField} id="name" type="text" onChange={(e) => setName(e.target.value)} value={name} placeholder="Enter your name..." required="true"></input>
-                <label for="email">Email:</label>
                 <input className={styles.inputField} id="email" type="email" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Enter your email..." required="true"></input>
-                <label for="text">Message:</label>
                 <textarea className={`${styles.inputField} ${styles.textarea}`} required="true" id="textarea" type="text" onChange={(e) => setMsg(e.target.value)} value={msg} placeholder="Enter your message..."></textarea>
                 <button className={styles.btn} type="submit">
                     SEND

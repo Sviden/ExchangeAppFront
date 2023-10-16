@@ -80,9 +80,9 @@ export const Conversion = (props) => {
                 ></Select>
 
                 <div className={styles.amountInput}>
-                    <label for="amount">Amount {from} </label>
-                    <input id="amount" type="number" min={1} value={amount} onChange={(e) => setAmount(e.target.value)}></input>
+                    <input placeholder="Amount" id="amount" type="number" min={1} value={amount} onChange={(e) => setAmount(e.target.value)}></input>
                 </div>
+                <div className={exchResult ? styles.exchangeResult : ""}> {exchResult ? <Result /> : ""}</div>
                 <div className={styles.btnContainer}>
                     {" "}
                     <button className={styles.btn} type="submit">
@@ -90,7 +90,6 @@ export const Conversion = (props) => {
                     </button>
                 </div>
             </form>
-            <div className={exchResult ? styles.exchangeResult : ""}> {exchResult ? <Result /> : ""}</div>
             <div>
                 <ToastContainer enableMultiContainer position="top-center" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover containerId={"A"} />
             </div>

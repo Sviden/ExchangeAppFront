@@ -13,34 +13,19 @@
     justify-items: stretch;
 }
 
-.menuListLi{
+.menuListLi, .menuListOnClick{
     font-family: $menuFont;
+    font-weight: 600;
     border-bottom: 1.5px solid $borderBottomMenu;
     list-style-type: none;
     padding: 3%;
     cursor: pointer;
 }
 
-.menuListLi:hover{
-    text-shadow: 2px 2px 5px $hoverColor;
-    font-size: 1.1em;
-    border-bottom: 2px solid $borderBottomMenuOnHover;
-
-    
-}
-
 .menuListOnClick{
-    list-style-type: none;
-
-    font-family: $menuFont;
-    border-bottom: 2px solid black;
-    padding: 3.5%;
-    cursor: pointer;
-    text-shadow: 2px 2px 5px $hoverColor;
-    border-bottom: 2px solid $borderBottomMenuOnHover;
-
-
+    border-bottom: 1px solid rgba(81, 129, 81, 0.871);;
 }
+
 ul{
     height: 60%;
     width: 60%;
@@ -57,11 +42,5 @@ ul{
         justify-content: space-around;
       
     }
-
-    .menuList li:hover{
-        text-shadow: 4px 4px 8px #fb8105;
-
-    }
-
 }
 

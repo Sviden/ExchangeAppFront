@@ -35,20 +35,34 @@
     color: black;
     text-shadow: 6px 6px 10px rgb(255, 255, 255);
     font-family: $menuFont;
-    padding: 2%;
-    font-weight: 100;
-    
+    font-weight: 600;
+    padding: 20px 50px 10px;
 }
 
-.textContainer h6{
-    padding-left: 10%;
-    padding-right: 10%;
+.textContainer p {
+    padding: 30px;
 }
 
 
 .textContainer h3{
     font-family: $compNameFont;
-    font-weight:100;
+    font-weight: 100;
+}
+
+.socials {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        > svg {
+          width: 20px;
+          height: 20px;
+        }
+    }
 }
 
 

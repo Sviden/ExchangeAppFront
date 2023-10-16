@@ -1,6 +1,7 @@
 @import "global";
 
-*{
+*
+{
     box-sizing: border-box;
    // font-family: 'Barlow', sans-serif;
 }
@@ -8,7 +9,6 @@
 body{
     height: 100vh;
     overflow-x: hidden !important;
-
 }
 
 .mainContainer{
@@ -23,12 +23,11 @@ body{
 
 .NavContainer{
     display: grid;
-    grid-template-columns: 20% 17% 17% 17% 17% 10%;  //1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 17% 17% 17% 17% 12%;
     width: 100%;
     max-width: 100% !important;
    background: $mainColorTopBar;
      color: $textColor;
-    // border: 1px solid $topBarBorderColor;
     box-shadow:  16px 16px 32px #b1b1b1,
     -16px -16px 32px #ffffff;
  
@@ -45,12 +44,23 @@ body{
 
 .navSelect{
     overflow-x:visible !important;
-    //  background-color: $mainColorOrangeLight;
+    display: flex;
+    justify-content: center;
+    width: 100%;
      padding: 5%;
-    }
+
+     > div {
+        width: 80%;
+        max-width: 120px;
+     }
+   @media screen and (max-width: 500px) {
+    > div {
+        width: 100%;
+     }
+   }
+}
 
 .navEl:hover{
-    // border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
 
@@ -64,6 +74,11 @@ body{
     color: $compNameColor;
     cursor: pointer;
     font-family: 'Staatliches', cursive;
+
+    .compName {
+        margin: 0;
+        font-size: 20px;
+    }
 }
 
 
@@ -94,7 +109,7 @@ body{
         // grid-area: header;
        
         display: grid;
-        grid-template-columns: 80% 20%;  //1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 75% 25%; 
         width: 100vw;
         max-width: 100% !important;
         color: $textColor;
